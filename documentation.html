@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumentera din resa — IT-Snabbspåret</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="IT-Snabbspåret — Starta din IT-karriär snabbt">
+  <meta property="og:description" content="Certifikat, LinkedIn, CV, labbar och jobb — den snabbaste realistiska vägen in i IT. Gratis, på svenska.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trafo1.github.io/it-snabbsparet/">
+  <meta name="theme-color" content="#16a34a">
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="logo">&gt;_ IT-Snabbspåret</a>
+  <button class="nav-toggle" aria-label="Öppna meny">☰</button>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="minresa.html">Min resa</a>
+    <a href="roadmap.html">Vägkartan</a>
+    <a href="certifications.html">Certifikat</a>
+    <a href="linkedin.html">LinkedIn</a>
+    <a href="cv.html">CV</a>
+    <a href="documentation.html">Dokumentera</a>
+    <a href="jobsearch.html">Sök jobb</a>
+    <a href="intervju.html">Intervjun</a>
+    <a href="vuxna.html">För vuxna</a>
+    <a href="fragor.html">Frågor</a>
+  </nav>
+</header>
+
+<main>
+  <span class="tagline">Ditt bevis. Din synlighet. Ditt momentum.</span>
+  <h1>Dokumentera din resa</h1>
+  <p class="lead">
+    Ett inlägg i veckan på LinkedIn. Skärmdump + några rader. Det är hela metoden —
+    och den gör dig synlig för rekryterare <strong>innan</strong> du ens söker.
+  </p>
+
+  <h2>Varför det funkar</h2>
+  <ul>
+    <li><strong>Bevis:</strong> vem som helst kan skriva "motiverad" i ett CV. Du kan <em>visa</em> 15 veckors dokumenterat arbete.</li>
+    <li><strong>Synlighet:</strong> rekryterare scrollar LinkedIn hela dagarna. Dina inlägg är gratis reklam för dig.</li>
+    <li><strong>Momentum:</strong> ett inlägg i veckan tvingar dig att ha något att visa. Det håller dig igång.</li>
+  </ul>
+
+  <h2>Vad du postar 📸</h2>
+  <div class="card">
+    <p>Allt du gör på resan är material:</p>
+    <ul>
+      <li>Skärmdump på en avklarad kursmodul eller ett quiz</li>
+      <li>Skärmdump på terminalen — ditt första Linux-kommando räknas!</li>
+      <li>Bild på ditt nätverksschema från hemmanätverks-projektet</li>
+      <li>Ett fel du fastnade på — och hur du löste det (bästa inläggen!)</li>
+      <li>Certifikatet när det är klart 🎉 (det inlägget flyger)</li>
+      <li>Ett Microsoft Learn-märke</li>
+    </ul>
+    <p><strong>Tips:</strong> sudda alltid personlig info i skärmdumpar (IP-adresser, mejl, lösenord).</p>
+  </div>
+
+  <h2>Labbvägarna — tre nivåer, sida vid sida 🔬</h2>
+  <p>
+    Labbar är dina bevis — och ditt bästa inläggsmaterial. Välj nivå efter var du står, inte efter någon annans ordning.
+    Allt på nybörjarnivån går att göra gratis på en vanlig dator.
+  </p>
+
+  <div class="paths-grid">
+
+    <div class="path-card">
+      <span class="tier">Nivå 1 · Nybörjare</span>
+      <h3>Kom igång 🌱</h3>
+      <ul>
+        <li><strong>Kartlägg ditt hemmanätverk</strong> — alla enheter med IP, enkelt schema, byt routerns standardlösenord, kolla WPA2/WPS</li>
+        <li><strong>Linux i Windows (WSL)</strong> — installera Ubuntu, lär dig 15 grundkommandon i terminalen</li>
+        <li><strong>Webbserver på 30 min</strong> — installera nginx, öppna sidan i webbläsaren, stoppa/starta tjänsten</li>
+        <li><strong>Felsök på riktigt</strong> — stäng av en tjänst med flit, diagnostisera, fixa, dokumentera: symptom → orsak → lösning</li>
+        <li><strong>Pi-hole DNS-server</strong> — nybörjarens klassiker: reklamblockering för hela nätverket, uppe på 30 min, och du lär dig DNS på köpet</li>
+      </ul>
+    </div>
+
+    <div class="path-card">
+      <span class="tier">Nivå 2 · Mellannivå</span>
+      <h3>Bygg på riktigt 🔧</h3>
+      <ul>
+        <li><strong>Windows Server-labb</strong> — gratis utvärderings-ISO i en virtuell maskin: AD DS, DNS, GPO. Exakt det svenska arbetsgivare vill se</li>
+        <li><strong>Virtualisering</strong> — VirtualBox eller Hyper-V: kör flera maskiner samtidigt, ta snapshots, bryt och återställ</li>
+        <li><strong>Docker</strong> — kör din första container, förstå images och portar</li>
+        <li><strong>PowerShell-script</strong> — automatisera något eget: mappbackup, diskrapport, lista största filerna</li>
+        <li><strong>WireGuard VPN</strong> — egen VPN-server hem till ditt nätverk</li>
+      </ul>
+    </div>
+
+    <div class="path-card">
+      <span class="tier">Nivå 3 · Avancerat</span>
+      <h3>Sticka ut 🚀</h3>
+      <ul>
+        <li><strong>Redundant Linux-DNS</strong> — BIND9 master/slave med zonöverföring och failover-test</li>
+        <li><strong>Övervakningsstack</strong> — Uptime Kuma eller Grafana: se dina egna tjänster gå upp och ner</li>
+        <li><strong>Egen brandvägg</strong> — pfSense/OPNsense i en VM: regler, segmentering</li>
+        <li><strong>Docker &amp; Python</strong> — containerisera en liten Flask-app</li>
+        <li><strong>Data-pipeline</strong> — hämta data med Python, visualisera i Power BI</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p>
+    Flera av labbarna finns i mitt eget CV — men gör dem i den ordning som passar <strong>din</strong> nivå, inte min.
+    Nivåerna ovan följer vad som brukar rekommenderas för nybörjare i branschen, inte min personliga historik.
+  </p>
+  <p>
+    <strong>Regeln för varje labb:</strong> skärmdumpa medan du bygger, anteckna vad som strulade, och skriv en rad i CV:ts
+    projekt-sektion när det funkar: <em>labbnamn (teknikerna i parentes)</em>. Ett labb = ett CV-tillskott = ett inlägg. Tre flugor.
+  </p>
+
+  <h2>Så skriver du — mallen ✍️</h2>
+  <div class="copybox">
+    <span class="label">Mall: veckoinlägg</span>
+    <p>Vecka 6 på min resa mot IT. 🖥️</p>
+    <p>Den här veckan: [vad du gjorde — t.ex. "lärde mig hur DNS fungerar och felsökte mitt eget nätverk"].</p>
+    <p>Svåraste delen: [var ärlig — "subnät fick min hjärna att koka"].</p>
+    <p>Men nu sitter det. En vecka i taget.</p>
+    <p>#IT #karriärbyte #itsupport #lärresa</p>
+  </div>
+
+  <div class="copybox">
+    <span class="label">Mall: jag-fastnade-inlägg (folk älskar dessa)</span>
+    <p>Fastnade i 2 timmar igår. 😤</p>
+    <p>Problemet: [t.ex. "min Linux-server svarade inte"].</p>
+    <p>Lösningen: [t.ex. "tjänsten hade stannat — systemctl status visade det på 10 sekunder"].</p>
+    <p>Lärdomen: läs felmeddelandet. Det står ju där.</p>
+    <p>#IT #felsökning #lärresa</p>
+  </div>
+
+  <h2>Reglerna</h2>
+  <ul>
+    <li><strong>Frekvens: 1 gång i veckan.</strong> Samma dag varje vecka (söndag kväll funkar för de flesta). Mer är bonus, mindre är okej ibland — men aldrig tomt två veckor i rad.</li>
+    <li><strong>Kort.</strong> 4–8 rader. Ingen roman.</li>
+    <li><strong>Ärligt.</strong> Posta kämpiga veckor också. Äkthet slår polerat — och visar exakt den attityd chefer vill anställa.</li>
+    <li><strong>Bry dig inte om likes.</strong> 3 likes är inte misslyckande. Inlägget jobbar ändå — rekryteraren som kollar din profil om två månader ser HELA raden av inlägg. Det är då det betalar sig.</li>
+  </ul>
+
+  <h2>Visa aldrig brist på momentum 🔥</h2>
+  <p>
+    Din profil ska alltid visa rörelse. Pluggar du? Posta. Söker du jobb? Posta att du bygger vidare
+    (AWS, Microsoft Learn). Fick du ett nej? Posta vad du lär dig härnäst.
+    <strong>En profil i rörelse ser anställningsbar ut. En tyst profil ser stillastående ut.</strong>
+    Så enkelt är det.
+  </p>
+
+  <div class="today">
+    <h2>✅ Gör detta idag</h2>
+    <div class="check-item" data-key="forsta-inlagg">
+      <span class="box"></span>
+      <span class="txt">Posta ditt första inlägg: "Idag börjar min resa mot IT" + varför. Använd mallen.</span>
+    </div>
+    <div class="check-item" data-key="veckodag">
+      <span class="box"></span>
+      <span class="txt">Välj din veckodag för inlägg och lägg in påminnelse i mobilen.</span>
+    </div>
+    <div class="check-item" data-key="skarmdump">
+      <span class="box"></span>
+      <span class="txt">Ta en skärmdump på något du gjort den här veckan — nu har du nästa inlägg klart.</span>
+    </div>
+  </div>
+
+  <p class="next"><a href="jobsearch.html" class="btn">Nästa: Sök jobb →</a></p>
+</main>
+
+<footer>
+  IT-Snabbspåret · Skapad av Eric · Vägen in i IT är kortare än du tror.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

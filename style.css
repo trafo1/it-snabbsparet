@@ -1,0 +1,474 @@
+/* IT-Snabbspåret — gemensamt stilark */
+
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --accent: #16a34a;
+  --accent-dark: #14532d;
+  --accent-soft: #f0fdf4;
+  --border: #e2e8f0;
+  --shadow: 0 2px 8px rgba(15, 27, 45, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1b2d;
+    --surface: #16243a;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #22c55e;
+    --accent-dark: #86efac;
+    --accent-soft: #14261c;
+    --border: #263a55;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 17px;
+}
+
+/* ---------- Navigation ---------- */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-family: Consolas, monospace;
+  white-space: nowrap;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 1.3rem;
+  padding: 0.15rem 0.6rem;
+  cursor: pointer;
+}
+
+.nav nav {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.nav nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.nav nav a:hover { color: var(--accent); background: var(--accent-soft); }
+
+.nav nav a.active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+@media (max-width: 720px) {
+  .nav-toggle { display: block; }
+  .nav nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  .nav nav.open { display: flex; }
+  .nav nav a { padding: 0.6rem 0.7rem; }
+}
+
+/* ---------- Layout ---------- */
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+h1 {
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  color: var(--accent-dark);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 2.2rem 0 0.7rem;
+}
+
+h3 { font-size: 1.1rem; margin: 1.4rem 0 0.4rem; }
+
+p { margin-bottom: 0.9rem; }
+
+ul, ol { margin: 0 0 1rem 1.4rem; }
+
+li { margin-bottom: 0.4rem; }
+
+a { color: var(--accent); }
+
+strong { color: var(--accent-dark); }
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.tagline {
+  display: inline-block;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+/* ---------- Kort ---------- */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  margin: 1.1rem 0;
+  box-shadow: var(--shadow);
+}
+
+.card h3 { margin-top: 0; }
+
+.quote {
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  padding: 1rem 1.25rem;
+  border-radius: 0 12px 12px 0;
+  margin: 1.4rem 0;
+  font-style: italic;
+}
+
+.copybox {
+  background: var(--accent-soft);
+  border: 1px dashed var(--accent);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+  font-size: 0.98rem;
+}
+
+.copybox .label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  font-style: normal;
+}
+
+/* ---------- Tidslinje (roadmap) ---------- */
+
+.timeline { margin: 1.5rem 0; }
+
+.step {
+  position: relative;
+  padding: 0 0 1.6rem 2.6rem;
+  border-left: 3px solid var(--accent);
+  margin-left: 0.9rem;
+}
+
+.step:last-child { border-left-color: transparent; }
+
+.step-num {
+  position: absolute;
+  left: -1.05rem;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.step h3 { margin-top: 0.1rem; }
+
+/* ---------- "Gör detta idag" ---------- */
+
+.today {
+  margin-top: 3rem;
+  background: var(--accent-soft);
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  padding: 1.4rem 1.5rem;
+}
+
+.today h2 {
+  margin: 0 0 0.8rem;
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.check-item:hover { background: rgba(22, 163, 74, 0.08); }
+
+.check-item .box {
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: 0.15rem;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: transparent;
+  background: var(--surface);
+  transition: background 0.15s, color 0.15s;
+}
+
+.check-item.done .box { background: var(--accent); color: #fff; }
+
+.check-item.done span.txt { text-decoration: line-through; opacity: 0.65; }
+
+/* ---------- Knappar & sidfot ---------- */
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  transition: transform 0.1s, opacity 0.15s;
+}
+
+.btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.next {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 2rem 1rem 3rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- Hjälpklasser ---------- */
+
+.big { font-size: 1.25rem; font-weight: 700; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th { color: var(--accent-dark); }
+
+img { max-width: 100%; }
+
+/* ---------- Parallella vägar (certifikat) ---------- */
+
+/* Alltid tre kolumner sida vid sida — på små skärmar scrollar man i sidled */
+.paths-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.path-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.path-card .tier {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.path-card h3 { margin: 0 0 0.5rem; }
+
+.path-card ul { margin-bottom: 0.8rem; }
+
+.path-card .platform-link { margin-top: auto; }
+
+.platform-link {
+  display: block;
+  text-align: center;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  transition: opacity 0.15s;
+}
+
+.platform-link:hover { opacity: 0.9; }
+
+.platform-shot {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 0.7rem;
+}
+
+/* ---------- Cert-badges ---------- */
+
+.badge-row {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin: 0.2rem 0 0.9rem;
+}
+
+.cert-badge {
+  text-align: center;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--muted);
+  width: 72px;
+}
+
+.cert-badge .shield {
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 0.3rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow: var(--shadow);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.badge-img {
+  width: 92px;
+  display: block;
+  margin: 0 auto 0.6rem;
+}
+
+.shield.az { background: linear-gradient(135deg, #0078d4, #004e8c); }
+.shield.sc { background: linear-gradient(135deg, #0078d4, #32145a); }
+.shield.dp { background: linear-gradient(135deg, #00a4bd, #006064); }
+.shield.gg { background: linear-gradient(135deg, #4285f4, #34a853); font-size: 0.95rem; }
+
+/* ---------- Fullständigt CV-exempel ---------- */
+
+.cv-doc {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem 1.6rem;
+  margin: 1.2rem 0;
+  box-shadow: var(--shadow);
+  font-size: 0.92rem;
+  overflow-x: auto;
+}
+
+.cv-doc h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin: 1.2rem 0 0.4rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25rem;
+}
+
+.cv-doc h4:first-child { margin-top: 0; }
+
+.cv-doc p, .cv-doc li { margin-bottom: 0.35rem; }
+
+.cv-doc ul { margin: 0.2rem 0 0.6rem 1.2rem; }

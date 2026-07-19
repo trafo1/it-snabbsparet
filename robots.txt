@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trafo1.github.io/it-snabbsparet/sitemap.xml
