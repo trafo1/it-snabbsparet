@@ -406,7 +406,14 @@ img { max-width: 100%; }
   display: flex;
   gap: 0.7rem;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0.2rem 0 0.9rem;
+}
+
+.badge-row img {
+  width: 96px;
+  height: auto;
+  border: none;
 }
 
 .cert-badge {
