@@ -2,11 +2,11 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   // 0. Besöksstatistik (GoatCounter — gratis, GDPR-vänlig, ingen cookie-banner behövs)
-  //    Kräver att kontot "itsnabbsparet" skapats på goatcounter.com (2 min).
+  //    Kontot: https://trafo.goatcounter.com/
   var gc = document.createElement("script");
   gc.async = true;
   gc.src = "https://gc.zgo.at/count.js";
-  gc.setAttribute("data-goatcounter", "https://itsnabbsparet.goatcounter.com/count");
+  gc.setAttribute("data-goatcounter", "https://trafo.goatcounter.com/count");
   document.body.appendChild(gc);
 
   // 1. Hamburgermeny på mobil
