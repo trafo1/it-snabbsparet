@@ -65,11 +65,113 @@
     </div>
   </div>
 
-  <div class="web-tree">
-    <div class="web-root">AZ-900 eller Google IT Support — grunden för nästan allt</div>
-    <div class="web-line"></div>
-    <div class="web-firstjob">Vanligaste vägen: första jobbet som IT-support / Helpdesk</div>
-    <div class="web-line"></div>
+  <h2>Nätverket — ingen roll är en återvändsgränd</h2>
+  <p>
+    Det här är inte en enkel trappa där du väljer ett spår och sen sitter fast i det. Roller kopplar till
+    varandra hela tiden — en sysadmin glider naturligt in i DevOps eller säkerhet, en nätverkstekniker in i
+    molnsäkerhet, en utvecklare in i arkitektur. <strong>Heldragna linjer</strong> är den vanligaste vägen in
+    till en roll. <strong>Streckade linjer</strong> är verkliga sidosteg och pivoter — lika giltiga, bara mindre
+    vanliga som första steg.
+  </p>
+
+  <div class="graph-legend">
+    <span><span class="swatch"></span> Vanlig väg in</span>
+    <span><span class="swatch cross"></span> Sidosteg / pivot</span>
+  </div>
+
+  <div class="graph-wrap">
+    <svg viewBox="0 0 1000 780" xmlns="http://www.w3.org/2000/svg">
+      <!-- Kopplingar: vanlig väg (heldragen) -->
+      <g class="graph-edge-main">
+        <line x1="500" y1="34" x2="500" y2="108"/>
+        <line x1="500" y1="120" x2="165" y2="218"/>
+        <line x1="500" y1="120" x2="315" y2="268"/>
+        <line x1="500" y1="120" x2="490" y2="228"/>
+        <line x1="500" y1="120" x2="645" y2="238"/>
+        <line x1="500" y1="120" x2="618" y2="398"/>
+        <line x1="500" y1="120" x2="798" y2="398"/>
+        <line x1="500" y1="120" x2="142" y2="378"/>
+        <line x1="500" y1="120" x2="142" y2="488"/>
+        <line x1="500" y1="120" x2="298" y2="438"/>
+        <line x1="645" y1="238" x2="858" y2="258"/>
+        <line x1="618" y1="398" x2="898" y2="518"/>
+        <line x1="798" y1="398" x2="898" y2="518"/>
+        <line x1="490" y1="228" x2="648" y2="518"/>
+        <line x1="298" y1="438" x2="298" y2="558"/>
+      </g>
+      <!-- Kopplingar: sidosteg (streckad) -->
+      <g class="graph-edge-cross">
+        <line x1="165" y1="218" x2="645" y2="238"/>
+        <line x1="165" y1="218" x2="618" y2="398"/>
+        <line x1="315" y1="268" x2="648" y2="518"/>
+        <line x1="315" y1="268" x2="645" y2="238"/>
+        <line x1="490" y1="228" x2="645" y2="238"/>
+        <line x1="142" y1="378" x2="645" y2="238"/>
+        <line x1="142" y1="488" x2="645" y2="238"/>
+        <line x1="645" y1="238" x2="460" y2="672"/>
+        <line x1="490" y1="228" x2="460" y2="672"/>
+        <line x1="142" y1="378" x2="460" y2="672"/>
+        <line x1="858" y1="258" x2="460" y2="672"/>
+        <line x1="165" y1="218" x2="638" y2="672"/>
+        <line x1="298" y1="438" x2="638" y2="672"/>
+        <line x1="618" y1="398" x2="638" y2="672"/>
+        <line x1="142" y1="378" x2="638" y2="672"/>
+      </g>
+
+      <!-- Noder -->
+      <circle class="graph-dot root" cx="500" cy="30" r="12"/>
+      <text class="graph-label" x="500" y="8" text-anchor="middle">AZ-900 / Google IT Support</text>
+
+      <circle class="graph-dot hub" cx="500" cy="114" r="10"/>
+      <text class="graph-label" x="500" y="100" text-anchor="middle">IT-support (första jobbet)</text>
+
+      <circle class="graph-dot" cx="165" cy="218" r="7"/>
+      <text class="graph-label" x="180" y="215">Sysadmin</text>
+
+      <circle class="graph-dot" cx="315" cy="268" r="7"/>
+      <text class="graph-label" x="330" y="265">Nätverkstekniker</text>
+
+      <circle class="graph-dot" cx="490" cy="228" r="7"/>
+      <text class="graph-label" x="505" y="225">Cloud Engineer</text>
+
+      <circle class="graph-dot" cx="645" cy="238" r="7"/>
+      <text class="graph-label" x="660" y="235">DevOps</text>
+
+      <circle class="graph-dot" cx="858" cy="258" r="7"/>
+      <text class="graph-label" x="850" y="245" text-anchor="end">SRE / Platform Engineer</text>
+
+      <circle class="graph-dot" cx="618" cy="398" r="7"/>
+      <text class="graph-label" x="633" y="395">SOC-analytiker (Microsoft)</text>
+
+      <circle class="graph-dot" cx="798" cy="398" r="7"/>
+      <text class="graph-label" x="813" y="395">SOC-analytiker (traditionell)</text>
+
+      <circle class="graph-dot" cx="898" cy="518" r="7"/>
+      <text class="graph-label" x="890" y="505" text-anchor="end">Pentester</text>
+
+      <circle class="graph-dot" cx="648" cy="518" r="7"/>
+      <text class="graph-label" x="663" y="515">Cloud Security Engineer</text>
+
+      <circle class="graph-dot" cx="142" cy="378" r="7"/>
+      <text class="graph-label" x="157" y="375">Fullstack-utvecklare</text>
+
+      <circle class="graph-dot" cx="142" cy="488" r="7"/>
+      <text class="graph-label" x="157" y="485">QA-ingenjör</text>
+
+      <circle class="graph-dot" cx="298" cy="438" r="7"/>
+      <text class="graph-label" x="313" y="435">Data Analyst / Engineer</text>
+
+      <circle class="graph-dot" cx="298" cy="558" r="7"/>
+      <text class="graph-label" x="313" y="555">ML / AI-ingenjör</text>
+
+      <circle class="graph-dot" cx="460" cy="672" r="8"/>
+      <text class="graph-label" x="460" y="700" text-anchor="middle">Solutions Architect</text>
+
+      <circle class="graph-dot" cx="638" cy="672" r="8"/>
+      <text class="graph-label" x="638" y="700" text-anchor="middle">Scrum Master / IT-PM</text>
+
+      <text class="graph-label small" x="500" y="762" text-anchor="middle">Dra i webbläsarens zoom eller vrid mobilen om noderna känns trånga — grafen skalar med bredden.</text>
+    </svg>
   </div>
 
   <div class="card-alt">
@@ -81,10 +183,16 @@
       om platserna är verklig trots bristen på ca 30 000 specialister i landet. Det är alltså inte "lätt" här —
       men det är fullt görbart: ett starkt certifikat (SC-900/SC-200 eller Security+/CySA+) kombinerat med
       egna labb, en dokumenterad portfolio och en YH-utbildning som komplement stärker chanserna rejält.
-      De flesta andra roller på kartan (pentester, arkitekt, senior-roller) kräver dessutom 1–7 års erfarenhet
+      De flesta andra roller i grafen (pentester, arkitekt, senior-roller) kräver dessutom 1–7 års erfarenhet
       innan de blir realistiska oavsett — de nås bäst via första jobbet, inte runt det.
     </p>
   </div>
+
+  <p>
+    Grupperna nedan finns för överskådlighet och detaljer per roll — men glöm inte grafen ovan:
+    <strong>de streckade linjerna är lika verkliga karriärvägar som de heldragna.</strong> Du är aldrig låst
+    till en enda stig bara för att du börjar i en grupp.
+  </p>
 
   <div class="card">
     <p>
