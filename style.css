@@ -10,6 +10,8 @@
   --accent-soft: #f0fdf4;
   --border: #e2e8f0;
   --shadow: 0 2px 8px rgba(15, 27, 45, 0.06);
+  --accent2: #b45309;
+  --accent2-soft: #fffbeb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,8 +25,21 @@
     --accent-soft: #14261c;
     --border: #263a55;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --accent2: #fbbf24;
+    --accent2-soft: #2a2110;
   }
 }
+
+.card-alt {
+  background: var(--accent2-soft);
+  border: 1px solid var(--accent2);
+  border-left-width: 4px;
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  margin: 1.1rem 0;
+}
+
+.card-alt strong { color: var(--accent2); }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -324,6 +339,80 @@ footer .footer-about {
 
 footer a { color: var(--muted); text-decoration: underline; }
 footer a:hover { color: var(--accent); }
+
+/* ---------- Vägvalskartan (spindelnät) ---------- */
+
+.web-tree { margin: 2rem 0 2.5rem; }
+
+.web-root, .web-firstjob {
+  text-align: center;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 0.85rem 1.3rem;
+  border-radius: 14px;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
+
+.web-root { background: var(--accent); color: #fff; }
+
+.web-firstjob {
+  background: var(--accent-soft);
+  border: 2px solid var(--accent);
+  color: var(--accent-dark);
+  margin-top: 0;
+}
+
+.web-line {
+  width: 2px;
+  height: 26px;
+  background: var(--accent);
+  margin: 0 auto;
+  opacity: 0.6;
+}
+
+.web-branches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.web-branch {
+  border-top: 3px solid var(--accent);
+  padding-top: 0.9rem;
+}
+
+.web-branch .branch-title {
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.web-branch .step {
+  font-size: 0.82rem;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+}
+
+.web-branch .role-end {
+  margin-top: 0.5rem;
+  background: var(--accent-dark);
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .web-branch .role-end { background: var(--accent); }
+}
 
 /* ---------- 404-sida ---------- */
 
