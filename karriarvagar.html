@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karriärvägar — IT-Snabbspåret</title>
+  <meta name="description" content="Sex vanliga IT-karriärer förklarade: vad rollen gör, vad som krävs nybörjare till avancerat, verktyg som faktiskt används, och konkreta labbtips per spår.">
+  <link rel="canonical" href="https://trafo1.github.io/it-snabbsparet/karriarvagar.html">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Karriärvägar — IT-Snabbspåret">
+  <meta property="og:description" content="Sex vanliga IT-karriärer: vad de gör, vad som krävs, och labbtips per nivå.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trafo1.github.io/it-snabbsparet/karriarvagar.html">
+  <meta name="theme-color" content="#16a34a">
+</head>
+<body>
+
+<header class="nav">
+  <a href="index.html" class="logo">&gt;_ IT-Snabbspåret</a>
+  <button class="nav-toggle" aria-label="Öppna meny">☰</button>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="minresa.html">Min resa</a>
+    <a href="roadmap.html">Vägkartan</a>
+    <a href="karriarvagar.html">Karriärvägar</a>
+    <a href="certifications.html">Certifikat</a>
+    <a href="linkedin.html">LinkedIn</a>
+    <a href="cv.html">CV</a>
+    <a href="documentation.html">Dokumentera</a>
+    <a href="jobsearch.html">Sök jobb</a>
+    <a href="intervju.html">Intervjun</a>
+    <a href="vuxna.html">Karriärbyte</a>
+    <a href="fragor.html">Frågor</a>
+  </nav>
+</header>
+
+<main>
+  <span class="tagline">Sex vanliga vägar — researchade och faktakollade</span>
+  <h1>Karriärvägar inom IT</h1>
+  <p class="lead">
+    "IT" är inte ett jobb — det är hundra olika jobb. Här är sex vanliga roller: vad de faktiskt gör,
+    vad som krävs på nybörjar-, medel- och avancerad nivå, vilka verktyg som verkligen används 2026,
+    och konkreta labbar per spår. Allt nedan är researchat mot färska källor — inte gissat.
+  </p>
+
+  <div class="card">
+    <p>
+      <strong>Viktigt att komma ihåg:</strong> alla roller är olika beroende på företag, bransch och ort.
+      Det här är en överblick som pekar dig i rätt riktning — inte hela sanningen. Läs alltid riktiga
+      jobbannonser i ditt närområde för att se exakt vad just de efterfrågar just nu.
+    </p>
+  </div>
+
+  <h2>🎧 IT-support / Helpdesk</h2>
+  <p>
+    Första kontakten när något krånglar — användarsupport, felsökning, kontohantering. Den bredaste
+    och mest tillgängliga ingången till hela branschen, och grunden hela den här sajten redan bygger på.
+  </p>
+  <div class="card">
+    <p>Fullt beskrivet på <a href="roadmap.html">Vägkartan</a> och <a href="certifications.html">Certifikat-sidan</a> — Google IT Support eller AZ-900 är starten. Nästan alla andra spår nedan går att nå därifrån.</p>
+  </div>
+
+  <h2>🌐 Nätverkstekniker</h2>
+  <p>Bygger, driftar och felsöker nätverken allt annat vilar på — kontor, datacenter, molnanslutningar.</p>
+  <div class="paths-grid">
+    <div class="path-card">
+      <span class="tier">Nybörjare</span>
+      <h3>Grunderna</h3>
+      <ul>
+        <li>TCP/IP, subnetting, OSI-modellen</li>
+        <li>Grundläggande routing och switching</li>
+        <li><strong>CCNA</strong> — branschens erkända startpunkt</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Medel</span>
+      <h3>Verklig drift</h3>
+      <ul>
+        <li><strong>CCNP</strong> (Enterprise Core + inriktning)</li>
+        <li>Felsöka hybridmiljöer: on-prem + AWS VPC + Azure VNet</li>
+        <li>Python och Ansible för automatisering</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Avancerat</span>
+      <h3>Arkitektur</h3>
+      <ul>
+        <li><strong>CCIE</strong> eller motsvarande</li>
+        <li>SD-WAN, multi-vendor (Cisco, Juniper, Arista)</li>
+        <li>Terraform för nätverk som kod</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <p><strong>Verktyg som faktiskt används:</strong> Wireshark, SolarWinds/PRTG, Splunk, Python, Ansible, Terraform.</p>
+    <p><strong>Certifikatstege:</strong> CCNA → CCNP → CCIE.</p>
+    <p><strong>Labbtips:</strong> bygg ett litet nätverk gratis i Cisco Packet Tracer eller GNS3 — konfigurera VLAN och routing, felsök trafiken live med Wireshark. Dokumentera som ett labb i ditt CV, precis som <a href="cv.html">CV-guiden</a> visar.</p>
+  </div>
+
+  <h2>☁️ Molntekniker / Cloud Engineer</h2>
+  <p>Bygger och driftar infrastruktur i molnet istället för i ett eget serverrum — ett av de snabbast växande och bäst betalda spåren just nu.</p>
+  <div class="paths-grid">
+    <div class="path-card">
+      <span class="tier">Nybörjare</span>
+      <h3>Grunderna</h3>
+      <ul>
+        <li>Nätverksgrunder: IP, DNS, brandväggar</li>
+        <li>Linux-kommandoraden</li>
+        <li><strong>AZ-900</strong> eller AWS Cloud Practitioner</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Medel</span>
+      <h3>Bygga på riktigt</h3>
+      <ul>
+        <li><strong>AZ-104</strong> eller AWS Solutions Architect Associate</li>
+        <li>Virtuella nätverk, lagring, IAM-behörigheter</li>
+        <li>Infrastructure as Code med Terraform</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Avancerat</span>
+      <h3>Specialisering</h3>
+      <ul>
+        <li>Säkerhet, DevOps eller arkitektur-inriktning</li>
+        <li>Bygga in säkerhet från grunden (IAM, kryptering)</li>
+        <li>Multi-cloud-medvetenhet</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <p>
+      <strong>Verkligheten på marknaden:</strong> AWS har störst marknadsandel (~31 %), Azure närmar sig snabbt (~28 %,
+      och används av över 95 % av Fortune 500-företagen), Google Cloud ligger på ~12 %. Nästan 9 av 10 företag
+      använder fler än ett moln. <strong>Välj en plattform och gå djupt innan du breddar dig</strong> — ytlig kunskap
+      i tre moln väger mindre än verklig kompetens i ett.
+    </p>
+    <p><strong>Dominerande verktyg:</strong> Terraform — molnoberoende och används oavsett vilken plattform du väljer.</p>
+    <p><strong>Certifikatstege:</strong> AZ-900 (redan din startpunkt på den här sajten!) → AZ-104 eller AWS SAA → Terraform Associate.</p>
+    <p><strong>Labbtips:</strong> skapa ett gratis-tier-konto (sätt alltid en fakturaalarm först), sätt upp en virtuell maskin och en lagringsresurs för hand — bygg sedan om exakt samma sak med Terraform-kod. Den övningen är själva kärnan i rollen.</p>
+  </div>
+
+  <h2>⚙️ DevOps-ingenjör</h2>
+  <p>Bygger broarna mellan utveckling och drift — automatiserar allt som annars görs manuellt. Ett av de högst betalda spåren, och ett av de mest efterfrågade 2026.</p>
+  <div class="paths-grid">
+    <div class="path-card">
+      <span class="tier">Nybörjare</span>
+      <h3>Grunderna</h3>
+      <ul>
+        <li>Linux och kommandoraden</li>
+        <li>Git och GitHub</li>
+        <li>Bash-scripting, sedan grundläggande Python</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Medel</span>
+      <h3>Automation</h3>
+      <ul>
+        <li>CI/CD (GitHub Actions är gratis och vanligast att börja med)</li>
+        <li><strong>Docker</strong> — bygga images, skriva Dockerfiles</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Avancerat</span>
+      <h3>Skala upp</h3>
+      <ul>
+        <li><strong>Kubernetes</strong> — pods, deployments, services</li>
+        <li>Terraform för infrastruktur som kod</li>
+        <li>Övervakning: Prometheus/Grafana</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <p>
+      <strong>Fakta som spelar roll:</strong> Docker och Kubernetes är i praktiken ett krav för medel- och
+      seniorroller 2026 — inte "nice to have". Terraform dominerar infrastructure-as-code oavsett molnplattform.
+    </p>
+    <p><strong>Mest efterfrågade certifikat:</strong> AWS Solutions Architect Associate, Certified Kubernetes Administrator (CKA), HashiCorp Terraform Associate.</p>
+    <p><strong>Realistisk tid:</strong> med konsekvent studerande når de flesta anställningsbar nivå på 6–9 månader.</p>
+    <p><strong>Labbtips:</strong> containerisera en egen liten app med Docker, bygg en enkel CI/CD-pipeline med GitHub Actions som testar och deployar den automatiskt, kör sedan samma app i en gratis lokal Kubernetes-sandbox (t.ex. minikube).</p>
+  </div>
+
+  <h2>🔒 Cybersäkerhet / SOC-analytiker</h2>
+  <p>Övervakar, upptäcker och stoppar attacker. Global brist på kompetens — miljontals lediga tjänster världen över.</p>
+  <div class="paths-grid">
+    <div class="path-card">
+      <span class="tier">Nybörjare</span>
+      <h3>Grunderna</h3>
+      <ul>
+        <li>Nätverks- och OS-grunder</li>
+        <li><strong>Security+</strong> — universellt erkänt, nämns i över 70 % av jobbannonserna</li>
+        <li>TryHackMe: Pre-Security-spåret (kräver ingen erfarenhet)</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Medel</span>
+      <h3>Analys</h3>
+      <ul>
+        <li><strong>CySA+</strong> för analytiskt djup</li>
+        <li>Fler TryHackMe-spår, egna CTF:er</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Avancerat</span>
+      <h3>Bevisa det</h3>
+      <ul>
+        <li>HackTheBox-utmaningar</li>
+        <li>Egen GitHub-portfolio med skript och "writeups"</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <p>
+      <strong>Den viktigaste fakta i hela researchen:</strong> certifikat ensamt räcker inte här — arbetsgivare
+      vill uttryckligen se TryHackMe- eller HackTheBox-erfarenhet och en dokumenterad portfolio.
+      Det är exakt samma princip som resten av den här sajten bygger på: <strong>labb och bevis slår ett papper ensamt.</strong>
+    </p>
+    <p><strong>Certifikatstege:</strong> Security+ → CySA+.</p>
+    <p><strong>Löneläge (internationellt, som fingervisning):</strong> SOC-analytiker på entry-nivå ligger normalt lägre än erfarna specialister — precis som i alla IT-spår klättrar lönen snabbt med bevisad erfarenhet.</p>
+    <p><strong>Labbtips:</strong> börja gratis på TryHackMe:s Pre-Security-spår, lös en utmaning och skriv en kort "writeup" (vad du gjorde, vad du lärde dig) — publicera den på GitHub. Det är precis den portfolion arbetsgivare efterfrågar.</p>
+  </div>
+
+  <h2>📊 Data Engineer / Data Analyst</h2>
+  <p>Data Analyst besvarar affärsfrågor och bygger dashboards. Data Engineer bygger rörledningarna som förflyttar och strukturerar datan i botten. Olika jobb, samma startpunkt.</p>
+  <div class="paths-grid">
+    <div class="path-card">
+      <span class="tier">Data Analyst</span>
+      <h3>6–9 månader</h3>
+      <ul>
+        <li>SQL och Excel — dagliga verktyg</li>
+        <li>Power BI eller Tableau</li>
+        <li>Grundläggande Python och statistik</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Data Engineer</span>
+      <h3>8–12 månader</h3>
+      <ul>
+        <li>SQL på djupet (window functions, CTE:er)</li>
+        <li>Python för pipelines</li>
+        <li>Ett molnplattform + orkestreringsverktyg</li>
+      </ul>
+    </div>
+    <div class="path-card">
+      <span class="tier">Bevisa dig</span>
+      <h3>Projekt slår cert</h3>
+      <ul>
+        <li>Inget certifikat dominerar det här spåret</li>
+        <li>2–4 riktiga end-to-end-projekt väger tyngre</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <p><strong>Verktyg som faktiskt används:</strong> SQL och Python i nästan varje jobbannons. Analytiker lägger till Power BI/Tableau och Excel; ingenjörer lägger till molnplattform och orkestreringsverktyg.</p>
+    <p><strong>Labbtips:</strong> öva SQL gratis (t.ex. SQLZoo eller Mode), bygg en Power BI-dashboard av egen data (din träningslogg, dina studietimmar — vad som helst), och som nästa steg: ett litet end-to-end-pipelineprojekt som hämtar, rensar och lagrar data automatiskt.</p>
+  </div>
+
+  <h2>🖥️ Systemadministratör</h2>
+  <p>Håller servrar, Active Directory, Windows och Linux-miljöer igång — själva ryggraden i ett företags IT.</p>
+  <div class="card">
+    <p>
+      Redan väl täckt av grunderna på den här sajten: AZ-900 och Windows/Linux-kunskaperna i
+      <a href="roadmap.html">Vägkartan</a> är exakt startpunkten. Nästa steg brukar vara fördjupning i
+      Active Directory, PowerShell-automation och virtualisering (Hyper-V/VMware) — se
+      <a href="documentation.html">labbidéerna</a> för konkreta övningar.
+    </p>
+  </div>
+
+  <h2>Ett exempel — inte facit 🧭</h2>
+  <div class="card">
+    <p>
+      Min egen väg gick från lagerarbete via IT-support-grunder mot en roll som IT/OT-analytiker —
+      men det är <strong>bara ett exempel av många möjliga vägar, inte den enda rätta.</strong>
+      Sex spåren ovan är alla lika giltiga startpunkter. Välj det som faktiskt intresserar dig —
+      inte det du tror låter mest imponerande.
+    </p>
+    <p>Nyfiken på detaljerna i min egen resa ändå? <a href="minresa.html">Läs den här</a> — men bygg din egen.</p>
+  </div>
+
+  <div class="today">
+    <h2>✅ Gör detta idag</h2>
+    <div class="check-item" data-key="valjspar-karriar">
+      <span class="box"></span>
+      <span class="txt">Läs igenom alla sex spår och välj det som känns mest lockande — inte det du tror ser bäst ut.</span>
+    </div>
+    <div class="check-item" data-key="sok-annonser">
+      <span class="box"></span>
+      <span class="txt">Sök upp 3 riktiga jobbannonser för ditt valda spår i ditt närområde — jämför mot listan ovan.</span>
+    </div>
+    <div class="check-item" data-key="forsta-labbet-karriar">
+      <span class="box"></span>
+      <span class="txt">Starta det första labbtipset för ditt spår denna vecka.</span>
+    </div>
+  </div>
+
+  <p class="next"><a href="roadmap.html" class="btn">Tillbaka till Vägkartan →</a></p>
+</main>
+
+<footer>
+  <p class="footer-about">
+    IT-Snabbspåret är en gratis sida byggd av en person — Eric — som tog sig från lagergolvet till en IT-roll på fem månader.
+    Inga avgifter, inga dolda kostnader, inget att sälja dig. Bara vägen dit, delad öppet.
+  </p>
+  <p>
+    <a href="minresa.html">Min resa</a> · <a href="fragor.html">Frågor &amp; svar</a> ·
+    <a href="https://www.linkedin.com/in/ericaugustsson/" target="_blank" rel="noopener">LinkedIn</a> ·
+    <a href="https://discord.gg/HWkjbstgh" target="_blank" rel="noopener">Discord</a>
+  </p>
+  <p>Senast uppdaterad: juli 2026 · Skapad av Eric</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
