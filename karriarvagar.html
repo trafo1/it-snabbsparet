@@ -54,79 +54,154 @@
 
   <h2>Hela kartan — vad leder till vad</h2>
   <p>
-    Allt börjar på samma ställe och grenar sedan ut. Här är helheten i en bild: roten, första jobbet,
-    och de sex vanligaste grenarna därifrån — med certifikat, labb och nästa steg i tur och ordning.
+    Allt börjar på samma ställe: <strong>AZ-900 eller Google IT Support.</strong> Det är grunden för i
+    princip varenda gren nedan, oavsett vart du vill sluta. Vissa vägar kräver att du tar första jobbet
+    på vägen — andra går att hoppa rakt in i. Båda sätten finns med.
   </p>
 
   <div class="web-tree">
-    <div class="web-root">Google IT Support eller Microsoft Learn-grunder</div>
+    <div class="web-root">AZ-900 eller Google IT Support — grunden för nästan allt</div>
     <div class="web-line"></div>
-    <div class="web-firstjob">Första jobbet: IT-support / Helpdesk</div>
+    <div class="web-firstjob">Vanligaste vägen: första jobbet som IT-support / Helpdesk</div>
     <div class="web-line"></div>
+  </div>
 
-    <div class="web-branches">
+  <div class="card-alt">
+    <p>
+      <strong>Alternativet — hoppa direkt:</strong> forskningen är tydlig på en punkt: SOC-analytiker är en
+      genuint egen ingång. Företag anställer folk med noll professionell erfarenhet och lär upp dem på plats —
+      Security+ eller SC-900 räcker som grund, inget krav på helpdesk-år först. De flesta andra roller på den
+      här kartan (pentester, arkitekt, senior-roller) kräver däremot 1–7 års erfarenhet någonstans i kedjan
+      innan de blir realistiska — de nås bäst via första jobbet, inte runt det.
+    </p>
+  </div>
 
-      <div class="web-branch">
-        <div class="branch-title">☁️ Moln</div>
-        <div class="step">AZ-900</div>
-        <div class="step">AZ-104</div>
-        <div class="step">Labb: bygg samma resurs för hand, sen som Terraform-kod</div>
-        <div class="step">AZ-500 eller AZ-400</div>
-        <div class="role-end">Cloud Engineer</div>
-      </div>
+  <h3>🖥️ Drift &amp; Infrastruktur</h3>
+  <div class="web-branches">
+    <div class="web-branch">
+      <div class="branch-title">Systemadministratör</div>
+      <div class="step">Windows Server, AD DS, GPO</div>
+      <div class="step">PowerShell-automation</div>
+      <div class="step">Labb: Hyper-V-domän från grunden</div>
+      <div class="role-end">Sysadmin</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Nätverk</div>
+      <div class="step">CCNA → CCNP</div>
+      <div class="step">Labb: Packet Tracer/GNS3, Wireshark</div>
+      <div class="step">CCIE</div>
+      <div class="role-end">Nätverkstekniker</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Moln</div>
+      <div class="step">AZ-900 → AZ-104</div>
+      <div class="step">Labb: bygg en resurs för hand, sen som Terraform-kod</div>
+      <div class="step">AZ-500 / AZ-400</div>
+      <div class="role-end">Cloud Engineer</div>
+    </div>
+  </div>
 
-      <div class="web-branch">
-        <div class="branch-title">🔒 Cyber (Microsoft-spåret)</div>
-        <div class="step">AZ-900 / SC-900</div>
-        <div class="step">SC-200</div>
-        <div class="step">Labb: logganalys, TryHackMe Pre-Security</div>
-        <div class="role-end">SOC-analytiker</div>
-      </div>
+  <h3>⚙️ Automation &amp; Drift 2.0</h3>
+  <div class="web-branches">
+    <div class="web-branch">
+      <div class="branch-title">DevOps</div>
+      <div class="step">Linux, Git, Bash/Python</div>
+      <div class="step">Docker, CI/CD</div>
+      <div class="step">Labb: containerisera en app, bygg en pipeline</div>
+      <div class="role-end">DevOps-ingenjör</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Efter 2–3 år DevOps</div>
+      <div class="step">Kubernetes, Terraform på djupet</div>
+      <div class="step">Starkare programmering (Python/Go)</div>
+      <div class="step">Labb: egen övervakad k8s-kluster</div>
+      <div class="role-end">SRE / Platform Engineer</div>
+    </div>
+  </div>
 
-      <div class="web-branch">
-        <div class="branch-title">🔒 Cyber (traditionella spåret)</div>
-        <div class="step">Security+</div>
-        <div class="step">CySA+</div>
-        <div class="step">Labb: HackTheBox, egna CTF:er, GitHub-portfolio</div>
-        <div class="role-end">SOC-analytiker / Säkerhetsanalytiker</div>
-      </div>
+  <h3>🔒 Säkerhet</h3>
+  <div class="web-branches">
+    <div class="web-branch">
+      <div class="branch-title">Direktingång (Microsoft)</div>
+      <div class="step">AZ-900 / SC-900</div>
+      <div class="step">SC-200</div>
+      <div class="step">Labb: logganalys, TryHackMe Pre-Security</div>
+      <div class="role-end">SOC-analytiker</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Direktingång (traditionell)</div>
+      <div class="step">Security+</div>
+      <div class="step">CySA+</div>
+      <div class="step">Labb: HackTheBox, egna CTF:er, GitHub-portfolio</div>
+      <div class="role-end">SOC-analytiker</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Efter 1–3 år som SOC-analytiker</div>
+      <div class="step">OSCP (3–6 månaders förberedelse)</div>
+      <div class="step">Labb: egna CTF:er, bug bounties</div>
+      <div class="role-end">Pentester / Etisk hackare</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Från Cloud-spåret</div>
+      <div class="step">AZ-500 eller motsvarande</div>
+      <div class="step">IAM, kryptering, säkerhet i molnet</div>
+      <div class="role-end">Cloud Security Engineer</div>
+    </div>
+  </div>
 
-      <div class="web-branch">
-        <div class="branch-title">🌐 Nätverk</div>
-        <div class="step">CCNA</div>
-        <div class="step">CCNP</div>
-        <div class="step">Labb: Packet Tracer/GNS3, Wireshark</div>
-        <div class="step">CCIE</div>
-        <div class="role-end">Nätverkstekniker</div>
-      </div>
+  <h3>💻 Utveckling &amp; Data</h3>
+  <div class="web-branches">
+    <div class="web-branch">
+      <div class="branch-title">Fullstack-utvecklare</div>
+      <div class="step">HTML, CSS, JavaScript</div>
+      <div class="step">Ett ramverk (t.ex. React)</div>
+      <div class="step">Labb: en egen app, hela vägen till databasen</div>
+      <div class="role-end">Fullstack-utvecklare</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">QA / Testautomatisering</div>
+      <div class="step">Manuell testning + ISTQB</div>
+      <div class="step">Selenium/Playwright, CI/CD-integration</div>
+      <div class="role-end">QA-ingenjör</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Data</div>
+      <div class="step">DP-900</div>
+      <div class="step">SQL och Python på djupet</div>
+      <div class="step">Labb: Power BI-dashboard, ett pipelineprojekt</div>
+      <div class="role-end">Data Analyst / Engineer</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Efter Data-grunden</div>
+      <div class="step">Maskininlärning, statistik på djupet</div>
+      <div class="step">Egen lokal AI-stack som labb</div>
+      <div class="role-end">ML / AI-ingenjör</div>
+    </div>
+  </div>
 
-      <div class="web-branch">
-        <div class="branch-title">⚙️ DevOps</div>
-        <div class="step">Linux, Git, Bash</div>
-        <div class="step">Docker, CI/CD</div>
-        <div class="step">Labb: containerisera en app, bygg en pipeline</div>
-        <div class="step">Kubernetes, Terraform</div>
-        <div class="role-end">DevOps-ingenjör</div>
-      </div>
-
-      <div class="web-branch">
-        <div class="branch-title">📊 Data</div>
-        <div class="step">DP-900</div>
-        <div class="step">SQL och Python på djupet</div>
-        <div class="step">Labb: Power BI-dashboard, ett pipelineprojekt</div>
-        <div class="role-end">Data Analyst / Engineer</div>
-      </div>
-
+  <h3>🏛️ Senior — efter flera år</h3>
+  <div class="web-branches">
+    <div class="web-branch">
+      <div class="branch-title">Från Cloud, DevOps eller Dev — 5–7+ år</div>
+      <div class="step">Systemdesign, flera moln på djupet</div>
+      <div class="step">Affärsförståelse, kommunikation</div>
+      <div class="role-end">Solutions Architect</div>
+    </div>
+    <div class="web-branch">
+      <div class="branch-title">Från vilken teknisk roll som helst</div>
+      <div class="step">Scrum/agilt arbetssätt</div>
+      <div class="step">Kombinera teknisk bakgrund med ledarskap</div>
+      <div class="role-end">IT-projektledare / Scrum Master</div>
     </div>
   </div>
 
   <div class="card-alt">
     <p>
-      Titta på de två cyber-grenarna en gång till. Du kan nå en SOC-analytiker-roll via Microsoft-spåret
-      (AZ-900/SC-900 → SC-200) helt utan CCNA och utan högskoleexamen — samma breda grundcert du redan
-      börjar med kan bära dig hela vägen dit. Det tar tid, ingen genväg finns, men vägen är verklig.
-      Samma mönster upprepas i varje gren på kartan: bred grund, specialiserat certifikat, ett labb
-      som faktiskt bevisar det, och till sist rollen.
+      Samma mönster upprepas i varje gren: bred grund, specialiserat certifikat, ett labb som faktiskt
+      bevisar det, och till sist rollen. Skillnaden mellan grenarna är bara <strong>hur många år</strong>
+      som krävs innan nästa steg blir realistiskt — några (SOC-analytiker) är öppna direkt, andra
+      (Solutions Architect, Pentester) kräver att du samlar på dig erfarenhet först. Alla vägar bär dit,
+      bara i olika takt.
     </p>
   </div>
 
