@@ -1,0 +1,4 @@
+# Skydd mot att känsliga exportfiler av misstag hamnar i repot
+*.zip
+*LinkedInDataExport*
+*DataExport*
