@@ -414,6 +414,86 @@ footer a:hover { color: var(--accent); }
   .web-branch .role-end { background: var(--accent); }
 }
 
+/* ---------- Lönestege: stora rutor + mindre brickor ---------- */
+
+.salary-hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.6rem 0 2rem;
+}
+
+.salary-hero .tile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.salary-hero .tile .num {
+  font-size: clamp(1.6rem, 5vw, 2.3rem);
+  font-weight: 800;
+  color: var(--accent);
+  display: block;
+  line-height: 1.1;
+}
+
+.salary-hero .tile.highlight {
+  border-color: var(--accent2);
+  border-width: 2px;
+}
+
+.salary-hero .tile.highlight .num { color: var(--accent2); }
+
+.salary-hero .tile .label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 600px) {
+  .salary-hero { grid-template-columns: 1fr; }
+}
+
+.salary-row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 0.8rem 0 1.6rem;
+}
+
+.salary-row .tile-sm {
+  flex: 1;
+  min-width: 130px;
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 0.6rem;
+  text-align: center;
+}
+
+.salary-row .tile-sm.alt {
+  background: var(--accent2-soft);
+  border-color: var(--accent2);
+}
+
+.salary-row .tile-sm .num {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--accent-dark);
+  display: block;
+}
+
+.salary-row .tile-sm.alt .num { color: var(--accent2); }
+
+.salary-row .tile-sm .label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
 /* ---------- 404-sida ---------- */
 
 .error-code {
